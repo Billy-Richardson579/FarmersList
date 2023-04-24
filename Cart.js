@@ -10,8 +10,8 @@ class Cart {
     }
   
     removeProduct(i) {
-      const removedProduct = this.products.splice(i, 1)[0];
-      this.total -= removedProduct.price;
+      const removed = this.products.splice(i, 1)[0];
+      this.total -= removed.price;
     }
   }
   
